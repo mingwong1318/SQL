@@ -1,0 +1,19 @@
+SELECT *
+FROM superstore;
+
+SELECT(item_name),price
+FROM superstore
+ORDER BY(price);
+
+SELECT SUM(price*stock_quantity) AS Total_for_Premium_Coffee_Maker
+FROM superstore
+WHERE item_name = 'Premium Coffee Maker';
+
+
+SELECT (category), price, item_name
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+
+SELECT(item_name), stock_quantity
+FROM superstore
+WHERE item_name = 'Smart LED TV';
