@@ -37,9 +37,9 @@ SELECT avg(price)
 FROM superstore;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies".
-SELECT category, price, item_name
+SELECT AVG(price)
 FROM superstore
-WHERE category = 'Kitchen Supplies';
+WHERE category = "Kitchen Supplies";
 
 #Show quantity of Smart LED TV.
 SELECT item_name, stock_quantity
