@@ -28,20 +28,20 @@ VALUES
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
 #Use a SELECT statement to order items by price.
-SELECT(item_name),price
+SELECT item_name, price
 FROM superstore
-ORDER BY(price);
+ORDER BY price desc;
 
 #Show a statistic about the item prices.
-SELECT avg(price)
+SELECT avg(price) 
 FROM superstore;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies".
-SELECT (category), price, item_name
+SELECT category, price, item_name
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
 #Show quantity of Smart LED TV.
-SELECT(item_name), stock_quantity
+SELECT item_name, stock_quantity
 FROM superstore
 WHERE item_name = 'Smart LED TV';
